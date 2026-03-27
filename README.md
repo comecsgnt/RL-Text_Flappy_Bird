@@ -4,12 +4,13 @@ Individual assignment for the **3MD3220: Reinforcement Learning** course at Cent
 
 ## Overview
 
-This repository implements and compares two tabular reinforcement learning agents on the [Text Flappy Bird](https://gitlab-research.centralesupelec.fr/stergios.christodoulidis/text-flappy-bird-gym) environment:
+This repository implements and compares two tabular reinforcement learning agents on the [Text Flappy Bird](https://gitlab-research.centralesupelec.fr/stergios.christodoulidis/text-flappy-bird-gym) environment (`TextFlappyBird-v0`), a text-based variant of the classic Flappy Bird game developed at CentraleSupélec.
 
-- **On-policy first-visit Monte Carlo control** (Sutton & Barto, Alg. 5.4)
-- **Sarsa(λ) with replacing eligibility traces** (Sutton & Barto, Sec. 12.7)
+Two environment versions are available in the gym:
+- `TextFlappyBird-v0` — returns a compact 2D observation `(dx, dy)`: the distance of the player from the centre of the closest pipe gap. Used in this work.
+- `TextFlappyBird-screen-v0` — returns the full rendered character screen, incompatible with tabular methods due to the curse of dimensionality.
 
-The continuous `(dx, dy)` observation is discretized into a 20×20 grid, yielding a tabular Q-function of 800 entries. After 6,000 training episodes, Sarsa(λ) reaches ~492 pipes passed in greedy evaluation versus ~95 for Monte Carlo.
+For reference, the original [flappy-bird-gym](https://github.com/Talendar/flappy-bird-gym) exposes either a raw RGB pixel observation or a continuous feature vector. Both are too high-dimensional for tabular RL; extending to this setting would require function approximation (e.g. DQN).
 
 ## Repository structure
 
