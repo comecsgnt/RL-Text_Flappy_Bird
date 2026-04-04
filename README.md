@@ -16,8 +16,15 @@ For reference, the original [flappy-bird-gym](https://github.com/Talendar/flappy
 
 ```
 RL_Assignment_TFB.ipynb   # Main notebook (agents, training, plots)
+Final_Report.pdf          # Report (Springer LNCS format)
+Instructions.pdf          # Assignment instructions
 README.md
+.gitignore
 ```
+
+## Report
+
+The full PDF report is available [here](https://github.com/comegenet/RL-Text_Flappy_Bird/blob/main/Final_Report.pdf).
 
 ## Setup
 
