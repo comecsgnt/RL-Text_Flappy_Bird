@@ -42,8 +42,8 @@ The notebook can also be run directly in Google Colab — the installation cell 
 
 | Agent | Avg. score (greedy eval) | Reward |
 |---|---|---|
-| Monte Carlo | 95 ± 96 | 960 ± 955 |
-| Sarsa(λ) | 492 ± 350 | 4934 ± 3497 |
+| Monte Carlo | 95.3 ± 95.6 | 960.6 ± 955.4 |
+| Sarsa(λ) | 492.1 ± 349.8 | 4933.7 ± 3497.4 |
 
 Evaluation over 200 greedy episodes, `max_steps=10,000`.
 
